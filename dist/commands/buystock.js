@@ -4,7 +4,7 @@ const { SlashCommandBuilder } = require("discord.js");
 const { IP, postJson } = require("../function");
 const fs = require("fs");
 const path = require("path");
-const CONNECTION_FILE = path.join(__dirname, "connection.json");
+const CONNECTION_FILE = path.join(__dirname, "..", "connection.json");
 
 function getToken(senderId) {
     if (!fs.existsSync(CONNECTION_FILE)) {
